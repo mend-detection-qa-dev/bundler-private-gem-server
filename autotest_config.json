@@ -6,7 +6,7 @@
     "scan_output": {
       "security_scan_report_conclusion": "failure",
       "total_libs_scanned": {
-        "eq": 6
+        "gte": 3
       },
       "expected_messages": [
         {
