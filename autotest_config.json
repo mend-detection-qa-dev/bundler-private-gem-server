@@ -32,7 +32,7 @@
       },
       "expected_package_managers": {
         "contains": [
-          "RUBYGEMS"
+          "ruby"
         ]
       },
       "validate_agent_versions": false,
