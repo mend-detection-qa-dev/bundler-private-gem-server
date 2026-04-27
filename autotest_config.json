@@ -4,9 +4,9 @@
   "base_config": {
     "validate_scan_output": true,
     "scan_output": {
-      "_security_scan_report_conclusion": "failure",
+      "security_scan_report_conclusion": "failure",
       "total_libs_scanned": {
-        "gte": 4
+        "eq": 6
       },
       "expected_messages": [
         {
