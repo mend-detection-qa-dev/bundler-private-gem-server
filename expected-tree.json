@@ -1,0 +1,112 @@
+{
+  "_comment": "Expected dependency tree for bundler-private-gem-server probe. Tests a Gemfile with multiple source blocks: rubygems.org (default) and a fictional private server (gems.example.com). The lockfile records only the rubygems.org-resolved gems. acme-internal-auth appears in DEPENDENCIES with the ! suffix (source-scoped) but has no GEM spec entry because the private server is not reachable. Mend must parse both source declarations without failing. Versions resolved against rubygems.org as of 2026-04-27.",
+  "updateType": "OVERRIDE",
+  "type": "UPDATE",
+  "agent": "generic-bundler",
+  "agentVersion": "0.0.0",
+  "pluginVersion": "0.0.0",
+  "orgToken": "__PLACEHOLDER__",
+  "userKey": "__PLACEHOLDER__",
+  "timeStamp": 0,
+  "requesterEmail": "__PLACEHOLDER__",
+  "aggregateModules": false,
+  "preserveModuleStructure": false,
+  "extraProperties": {
+    "contributionsAvailable": "false",
+    "commitUrl": "__PLACEHOLDER__",
+    "gitHubInstallationId": "__PLACEHOLDER__",
+    "scmApplicationId": "__PLACEHOLDER__",
+    "branchName": "main",
+    "checkRunId": "__PLACEHOLDER__",
+    "userOrgToken": "__PLACEHOLDER__",
+    "commitId": "__PLACEHOLDER__",
+    "scmInstallationId": "__PLACEHOLDER__",
+    "repository": "mend-detection-qa/bundler-private-gem-server",
+    "scaResults": "__PLACEHOLDER__"
+  },
+  "scanSummaryInfo": {
+    "totalElapsedTime": 0,
+    "stepsSummaryInfo": [],
+    "packageManagers": ["RUBYGEMS"],
+    "isPrivileged": false,
+    "scanMethod": {
+      "type": "PackageManager"
+    }
+  },
+  "contributions": [],
+  "projects": [
+    {
+      "projectToken": "__PLACEHOLDER__",
+      "dependencies": [
+        {
+          "artifactId": "rack",
+          "version": "3.0.10",
+          "groupId": "",
+          "systemPath": "",
+          "optional": false,
+          "filename": "rack-3.0.10.gem",
+          "dependencyFile": "Gemfile.lock",
+          "dependencyType": "RESOLVED",
+          "children": []
+        },
+        {
+          "artifactId": "sinatra",
+          "version": "4.0.0",
+          "groupId": "",
+          "systemPath": "",
+          "optional": false,
+          "filename": "sinatra-4.0.0.gem",
+          "dependencyFile": "Gemfile.lock",
+          "dependencyType": "RESOLVED",
+          "children": [
+            {
+              "artifactId": "mustermann",
+              "version": "3.0.0",
+              "groupId": "",
+              "systemPath": "",
+              "optional": false,
+              "filename": "mustermann-3.0.0.gem",
+              "dependencyFile": "Gemfile.lock",
+              "dependencyType": "RESOLVED",
+              "children": [
+                {
+                  "artifactId": "ruby2_keywords",
+                  "version": "0.0.5",
+                  "groupId": "",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "ruby2_keywords-0.0.5.gem",
+                  "dependencyFile": "Gemfile.lock",
+                  "dependencyType": "RESOLVED",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "artifactId": "rack-protection",
+              "version": "4.0.0",
+              "groupId": "",
+              "systemPath": "",
+              "optional": false,
+              "filename": "rack-protection-4.0.0.gem",
+              "dependencyFile": "Gemfile.lock",
+              "dependencyType": "RESOLVED",
+              "children": []
+            },
+            {
+              "artifactId": "tilt",
+              "version": "2.4.0",
+              "groupId": "",
+              "systemPath": "",
+              "optional": false,
+              "filename": "tilt-2.4.0.gem",
+              "dependencyFile": "Gemfile.lock",
+              "dependencyType": "RESOLVED",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
